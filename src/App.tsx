@@ -1,12 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Header from "./components/Header";
+import NotesList from "./components/NotesList";
 
 function App() {
+  const [notes, setNotes] = useState<INote[]>([
+    {
+      id:( new Date()).toString(),
+      title: "swostika",
+      text: "meeting at 11 AM",
+      bgcolor:"#EDEEC0",
+      date:( new Date()).toString(),
+    },
+  ]);
   return (
-    <div className="App">
-      hi
-    </div>
+    <>
+      <Header />
+      <div className="containe p-4">
+        <NotesList notes={notes} setNotes={setNotes }/>
+      </div>
+    </>
   );
 }
 

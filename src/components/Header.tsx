@@ -1,7 +1,11 @@
-import * as React from "react";
+import React from "react";
 
-const Header = () => {
-  return "header";
-};
+type Props = {};
 
-export default Header;
+export default function Header({}: Props) {
+  return (
+    <div className="w-full flex items-center bg-teal-800 h-12">
+      <h1 className="font-normal text-xl text-white ml-4 leading-10 capitalize">Note using react typescript and CSS tailwind</h1>
+    </div>
+  );
+}
