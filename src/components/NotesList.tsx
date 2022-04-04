@@ -9,7 +9,7 @@ const NotesList: React.FC<INoteList> = ({ notes,setNotes }) => {
     setNotes(notes.filter(note=>note.id!==id))
   }
   return (
-    <div>
+    <div className="grid sm:grid-cols-3 gap-2	">
       {notes.map(note => {
         return <Notes key={note.id} note={note} handleDelete={ handleDelete}/>
       })}

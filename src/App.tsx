@@ -18,10 +18,10 @@ function App() {
     <>
       <Header />
       <h1 className="leading-8 text-3xl text-lime-800	font-semibold ml-4 mt-2">Notes</h1>
-      <div className="containe p-4 grid sm:grid-cols-3">
+      <div className="containe p-4 ">
         <NotesList notes={notes} setNotes={setNotes} />
       </div>
-      <CreateNotes />
+      <CreateNotes notes={notes} setNotes={setNotes}  />
     </>
   );
 }
