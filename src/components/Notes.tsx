@@ -8,7 +8,7 @@ const Notes: React.FC<INotes> = ({ note,handleDelete }) => {
   return (
     // card component
     <div
-      className="max-w-md py-4 px-8 border bg-white shadow-lg rounded-lg my-10"
+      className="max-w-md py-4 px-8 border bg-white shadow-lg rounded-lg my-6"
       style={{ backgroundColor: note.bgcolor }}
     >
       <div>
